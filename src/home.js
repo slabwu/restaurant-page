@@ -1,7 +1,7 @@
 export const Home = (function() {
     const load = () => {
         const headline = document.createElement("h2");
-        headline.textContent = "Only the best seafood a for the best felines.";
+        headline.textContent = "Only the best seafood for the best felines.";
         content.appendChild(headline);
 
         const paragraph = document.createElement("p");

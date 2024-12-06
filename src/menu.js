@@ -1,6 +1,6 @@
 export const Menu = (function() {
     const load = () => {
-        const headline = document.createElement("h1");
+        const headline = document.createElement("h2");
         headline.textContent = "Menu";
         content.appendChild(headline);
 
