@@ -1,7 +1,7 @@
 import "./styles.css";
 import { Home } from "./home.js";
 import { Menu } from "./menu.js";
-import { About } from "./about.js";
+import { Contact } from "./contact.js";
 
 const Display = (function() {
     const content = document.getElementById("content");
@@ -26,12 +26,12 @@ const Display = (function() {
         };
     });
 
-    const aboutButton = document.getElementById("about");
-    aboutButton.addEventListener("click", e => {
-        if (context !== "about") {
+    const contactButton = document.getElementById("contact");
+    contactButton.addEventListener("click", e => {
+        if (context !== "contact") {
             clearPage();
-            About.load();
-            context = 'about';
+            Contact.load();
+            context = 'contact';
         };
     });
 
