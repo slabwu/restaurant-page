@@ -20,7 +20,5 @@ const Display = (function() {
         clearPage()
     });
 
-    return { load };
+    load();
 })();
-
-Display.load();
