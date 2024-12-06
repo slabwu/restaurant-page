@@ -2,9 +2,9 @@ import "./styles.css";
 
 const Display = (function() {
     const content = document.getElementById("content");
-    const home = document.getElementById("home");
-    const menu = document.getElementById("menu");
-    const about = document.getElementById("about");
+    const homeButton = document.getElementById("home");
+    const menuButton = document.getElementById("menu");
+    const aboutButton = document.getElementById("about");
 
     const load = () => {
         const headline = document.createElement("h1");
@@ -13,11 +13,13 @@ const Display = (function() {
     };
     
     const clearPage = () => {
-        content.innerHTML = '';
+        content.replaceChildren();
     }
     
-    home.addEventListener("click", clearPage());
-    
+    homeButton.addEventListener("click", e => {
+        clearPage()
+    });
+
     return { load };
 })();
 
