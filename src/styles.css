@@ -1,5 +1,6 @@
 body {
     font-family: "Calibri";
+    background-color: OrangeRed;
     margin: 0;
 }
 
@@ -56,14 +57,48 @@ h2 {
     font-size: 46px;
 }
 
-p {
+p.home {
     font-size: 26px;
 }
 
-h2.home {
-    padding: 100px 100px 0;
+.homebody, .menubody, .contactbody {
+    background-color: white;
+    border-radius: 30px;
 }
 
-p.home {
-    padding: 0 100px 0;
+.homebody {
+    display: flex;
+    margin-left: 50px;
+}
+
+.menubody, .contactbody {
+    padding: 10px 100px 40px;
+    margin: 0 0 100px;
+}
+
+.hometext {
+    padding: 70px 40px 70px;
+}
+
+.homeimg {
+    display: flex;
+    flex-direction: column;
+}
+
+img.home {
+    flex: 1;
+    width: 500px;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 60px 0 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2.menu {
+    margin-bottom: 0;
 }

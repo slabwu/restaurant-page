@@ -1,8 +1,12 @@
 export const Menu = (function() {
     const load = () => {
+        const menuBody = document.createElement("div");
+        menuBody.classList.add("menubody");
+        content.appendChild(menuBody);
+
         const headline = document.createElement("h2");
         headline.textContent = "Menu";
-        content.appendChild(headline);
+        menuBody.appendChild(headline);
 
         const menuItems = [
             {name: "Crispy Catamari", description: "Squid rings fried in a layer of deliciously seasoned batter.", price: "10.00€"},
@@ -15,7 +19,7 @@ export const Menu = (function() {
 
         menuItems.forEach((item) => {
             const foodContainer = document.createElement("div");
-            content.appendChild(foodContainer);
+            menuBody.appendChild(foodContainer);
 
             const foodName = document.createElement("h3");
             foodName.textContent = `${item.name}`;
@@ -25,7 +29,7 @@ export const Menu = (function() {
             foodDescription.textContent = `${item.description}`;
             foodContainer.appendChild(foodDescription);
 
-            const foodPrice = document.createElement("p");
+            const foodPrice = document.createElement("b");
             foodPrice.textContent = `${item.price}`;
             foodContainer.appendChild(foodPrice);
         }
