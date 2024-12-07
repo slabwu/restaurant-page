@@ -53,11 +53,17 @@ button {
 }
 
 h2 {
-    padding: 100px 100px 0;
     font-size: 46px;
 }
 
 p {
-    padding: 0 100px 0;
     font-size: 26px;
+}
+
+h2.home {
+    padding: 100px 100px 0;
+}
+
+p.home {
+    padding: 0 100px 0;
 }
