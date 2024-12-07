@@ -3,9 +3,13 @@ import { Home } from "./home.js";
 import { Menu } from "./menu.js";
 import { Contact } from "./contact.js";
 
-const Display = (function() {
+export const Display = (function() {
     const content = document.getElementById("content");
     let context = "home";
+
+    const getContext = () => context;
+    const changeContext = (newContext) => context = newContext;
+
     Home.load();
 
     const homeButton = document.getElementById("home");
@@ -40,4 +44,6 @@ const Display = (function() {
     const clearPage = () => {
         content.replaceChildren();
     }
+
+    return { clearPage, getContext, changeContext }
 })();

@@ -23,8 +23,13 @@ export const Home = (function() {
 
         const button = document.createElement("button");
         button.classList.add("home");
-        button.textContent = "Order Today";
+        button.textContent = "Order .Today";
         textBody.appendChild(button);
+        button.addEventListener("click", e => {
+            Display.clearPage();
+            Menu.load();
+            Display.changeContext("menu");
+        });    
     
         const image = document.createElement("img");
         image.classList.add("home");
@@ -36,3 +41,5 @@ export const Home = (function() {
 })();
 
 import cat from "./assets/cat.jpg";
+import { Display } from "./index.js";
+import { Menu } from "./menu.js";
