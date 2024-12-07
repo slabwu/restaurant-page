@@ -115,8 +115,8 @@ button.home:hover {
 }
 
 .menubody, .contactbody {
-    padding: 10px 50px 60px;
-    margin: 0 0 100px;
+    padding: 10px 50px 80px;
+    margin: 0 0 120px;
     width: 600px;
 }
 
@@ -160,4 +160,20 @@ p.menu {
 b.menu {
     font-family: "imperial";
     font-size: 24px;
+}
+
+h3.contact {
+    font-family: "imperial";
+    font-size: 60px;
+    margin: 0 0 10px;
+}
+
+ul.contact {
+    margin-bottom: 40px;
+}
+
+li.contact {
+    list-style: none;
+    margin-bottom: 2px;
+    font-size: 20px;
 }
