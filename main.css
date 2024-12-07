@@ -1,0 +1,182 @@
+/*!******************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles.css ***!
+  \******************************************************************/
+body {
+    background-color: OrangeRed;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'fleur';
+    src: url(e0b1b4d77fb430a2bc75.ttf) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'imperial';
+    src: url(7b06a92321f55501913e.ttf) format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+header {
+    font-family: "fleur";
+    background-color: OrangeRed;
+    color: white;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+
+h1 {
+    margin: 20px 45px 10px;
+    font-size: 70px;
+    flex: 1 0 0;
+    transition: all 0.5s;
+}
+
+h1:hover {
+    padding-left: 25px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    font-family: "imperial";
+    font-size: 30px;
+    padding: 30px 5vw 4px 0;
+}
+
+nav button:hover {
+    padding-bottom: 25px;
+}
+
+button {
+    background: OrangeRed;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+    transition: all 0.5s;
+}
+
+#content {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 126px;
+}
+
+h2 {
+    font-family: "fleur";
+    font-size: 100px;
+    margin: 0;
+}
+
+h2.home {
+    font-family: "imperial";
+    font-size: 60px;
+    margin: 0;
+}
+
+p.home {
+    font-size: 26px;
+}
+
+button.home {
+    font-family: "imperial";
+    font-size: 35px;
+    padding: 16px 40px 16px;
+    border-radius: 20px;
+}
+
+button.home:hover {
+    padding: 16px 50px 16px;
+}
+
+
+.homebody, .menubody, .contactbody {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.homebody {
+    display: flex;
+    margin-left: 50px;
+}
+
+.menubody, .contactbody {
+    padding: 10px 50px 80px;
+    margin: 0 0 120px;
+    width: 600px;
+}
+
+.hometext {
+    padding: 70px 40px 70px;
+}
+
+.homeimg {
+    display: flex;
+    flex-direction: column;
+}
+
+img.home {
+    flex: 1;
+    width: 500px;
+    object-fit: cover;
+}
+
+h3 {
+    font-size: 30px;
+    margin: 60px 0 0;
+}
+
+p {
+    font-size: 20px;
+}
+
+h2 {
+    margin: 40px 0 0;
+}
+
+h3.menu {
+    font-family: "imperial";
+    font-size: 50px;
+}
+
+p.menu {
+    margin: 10px 0 10px;
+}
+
+b.menu {
+    font-family: "imperial";
+    font-size: 24px;
+}
+
+h3.contact {
+    font-family: "imperial";
+    font-size: 60px;
+    margin: 0 0 10px;
+}
+
+ul.contact {
+    margin-bottom: 40px;
+}
+
+li.contact {
+    list-style: none;
+    margin-bottom: 2px;
+    font-size: 20px;
+}
