@@ -6,6 +6,7 @@ export const Menu = (function() {
 
         const headline = document.createElement("h2");
         headline.textContent = "Menu";
+        headline.classList.add("menu");
         menuBody.appendChild(headline);
 
         const menuItems = [
@@ -23,14 +24,17 @@ export const Menu = (function() {
 
             const foodName = document.createElement("h3");
             foodName.textContent = `${item.name}`;
+            foodName.classList.add("menu");
             foodContainer.appendChild(foodName);
 
             const foodDescription = document.createElement("p");
             foodDescription.textContent = `${item.description}`;
+            foodDescription.classList.add("menu");
             foodContainer.appendChild(foodDescription);
 
             const foodPrice = document.createElement("b");
             foodPrice.textContent = `${item.price}`;
+            foodPrice.classList.add("menu");
             foodContainer.appendChild(foodPrice);
         }
     )

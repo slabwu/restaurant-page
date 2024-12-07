@@ -1,11 +1,24 @@
 body {
-    font-family: "Calibri";
     background-color: OrangeRed;
     margin: 0;
 }
 
+@font-face {
+    font-family: 'fleur';
+    src: url('./assets/fleurdeleah.ttf') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'imperial';
+    src: url('./assets/imperial.ttf') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
 header {
-    font-family: "Brush Script MT";
+    font-family: "fleur";
     background-color: OrangeRed;
     color: white;
     margin: 0;
@@ -13,8 +26,8 @@ header {
 }
 
 h1 {
-    margin: 20px 20px 20px;
-    font-size: 50px;
+    margin: 20px 45px 20px;
+    font-size: 70px;
     flex: 1 0 0;
 }
 
@@ -54,7 +67,14 @@ button {
 }
 
 h2 {
-    font-size: 46px;
+    font-family: "fleur";
+    font-size: 100px;
+    margin: 0;
+}
+
+h2.home {
+    font-family: "imperial";
+    font-size: 60px;
 }
 
 p.home {
@@ -72,8 +92,9 @@ p.home {
 }
 
 .menubody, .contactbody {
-    padding: 10px 100px 40px;
+    padding: 10px 50px 60px;
     margin: 0 0 100px;
+    width: 600px;
 }
 
 .hometext {
@@ -99,6 +120,20 @@ p {
     font-size: 20px;
 }
 
-h2.menu {
-    margin-bottom: 0;
+h2 {
+    margin: 40px 0 0;
+}
+
+h3.menu {
+    font-family: "imperial";
+    font-size: 50px;
+}
+
+p.menu {
+    margin: 10px 0 10px;
+}
+
+b.menu {
+    font-family: "imperial";
+    font-size: 24px;
 }
